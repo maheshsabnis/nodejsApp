@@ -50,7 +50,7 @@ router.get("/home", function(req, resp) {
 // 5. Model-Schema-Mapping with collection on Mongo DB and
 // establishing collection with it.'
 mongoose.connect(
-  "mongodb://localhost/ProductsAppDb",
+  "mongodb://ec2-3-16-131-52.us-east-2.compute.amazonaws.com:27017/ProductsAppDb",
   { useNewUrlParser: true }
 );
 
@@ -134,5 +134,5 @@ instance.delete("/api/products/:id", function(request, response) {
 
 // 6. start listening
 instance.listen(8080, function() {
-  console.log("started listening on port 4070");
+  console.log("started listening on port 8080");
 });
