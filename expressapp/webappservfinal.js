@@ -133,6 +133,6 @@ instance.delete("/api/products/:id", function(request, response) {
 });
 
 // 6. start listening
-instance.listen(4070, function() {
+instance.listen(8080, function() {
   console.log("started listening on port 4070");
 });
