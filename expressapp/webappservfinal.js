@@ -50,7 +50,7 @@ router.get("/home", function(req, resp) {
 // 5. Model-Schema-Mapping with collection on Mongo DB and
 // establishing collection with it.'
 mongoose.connect(
-  "mongodb://ec2-3-16-131-52.us-east-2.compute.amazonaws.com:27017/ProductsAppDb",
+  "mongodb://localhost/ProductsAppDb",
   { useNewUrlParser: true }
 );
 
